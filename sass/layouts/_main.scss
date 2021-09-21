@@ -5,7 +5,7 @@
         display: flex;
         width: 100%;
         text-transform: uppercase;
-
+        cursor: pointer;
         &__text {
             width: 50%;
             letter-spacing: 6px;
@@ -15,6 +15,11 @@
             align-self: center;
             width: 50%;
             height: 12px;
+        }
+
+        &:hover {
+            color: a.$dark-gray;
+            opacity: 40%;
         }
     }
 

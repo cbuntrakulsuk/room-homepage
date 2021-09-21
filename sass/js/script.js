@@ -1,3 +1,6 @@
+import $ from 'jquery'
+import 'slick-carousel'
+
 //Selectors
 const hamBtn = document.querySelector('.navbar__hamburger');
 const menu = document.querySelector('.navbar__links');
@@ -10,3 +13,9 @@ function openMenu(e) {
     hamBtn.classList.toggle("open");
     menu.classList.toggle("showMenu")
 }
+
+//slider
+$('.slider').slick({
+    prevArrow: '.hero__controls__arrow__prev',
+    nextArrow: '.hero__controls__arrow__next',
+})

@@ -1,3 +1,4 @@
+@use '../abstracts' as a;
 
 .slider {
     position: relative;
@@ -20,6 +21,60 @@
             background: black;
             width: 56px;
             height: 56px;
+
+            &:hover {
+                background: a.$dark-gray;
+                cursor: pointer;
+            }
         }
     }
 }
+
+.hero {
+    position: relative;
+    height: 360px;
+    width: 375px;
+
+    &__controls {
+        display: flex;
+        position: absolute;
+        height: 56px;
+        bottom: 0;
+        width: 375px;
+        justify-content: flex-end;
+
+        &__arrow__prev {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            width: 56px;
+            height: 56px;
+
+            &:hover {
+                background: a.$dark-gray;
+                cursor: pointer;
+            }
+        }
+    
+        &__arrow__next {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            width: 56px;
+            height: 56px;
+
+            &:hover {
+                background: a.$dark-gray;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+
+
+
+
+

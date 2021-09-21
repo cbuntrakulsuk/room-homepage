@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.e61c6e6e.png">
   <link rel="stylesheet" href="/main.39afc03c.css">
+
   <title>Frontend Mentor | Room homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -13,7 +13,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }</style>
 <script src="/main.39afc03c.js"></script></head>
 
-
+<body>
 
   <nav class="navbar">
     <div class="navbar__hamburger">
@@ -29,19 +29,37 @@
     </ul>
   </nav>
 
-  <div class="slider">
-    <!-- slider -->
-    <!-- needs js functionality and slide positioning -->
-    <img class="slider__img" src="/mobile-image-hero-1.f12c0eb6.jpg">
-    <div class="slider__controls">
-      <div class="slider__controls__button"> <img src="/icon-angle-left.882e2bc0.svg" alt="left arrow"> </div>
-      <div class="slider__controls__button"><img src="/icon-angle-right.b801d7ed.svg" alt="right arrow"> </div>  
+  <div class="hero">
+    <div class="slider">
+      <div class="slider__item">
+        <img src="/mobile-image-hero-1.f12c0eb6.jpg">
+      </div>
+      <div class="slider__item">
+        <img src="/mobile-image-hero-2.ee6d7f0a.jpg">
+      </div>
+      <div class="slider__item">
+        <img src="/mobile-image-hero-3.c882df71.jpg">
+      </div>
     </div>
-  </div>
+
+    <div class="hero__controls">
+      <div class="hero__controls__arrow__prev"> 
+        <img src="/icon-angle-left.882e2bc0.svg" alt="left arrow"> 
+      </div>
+      <div class="hero__controls__arrow__next"> 
+        <img src="/icon-angle-right.b801d7ed.svg" alt="rightarrow"> 
+      </div>
+    </div>
+
+</div>
+  <!-- <div class="controls">
+    <div class="controls__button"> <img src="../images/icon-angle-left.svg" alt="left arrow"> </div>
+    <div class="controls__button"><img src="../images/icon-angle-right.svg" alt="right arrow"> </div>  
+  </div> -->
 
 
 
-<body>
+
 
   <section class="main">
     <div class="container">
@@ -72,31 +90,15 @@
     <img src="/image-about-light.db993602.jpg">
   </section>
 
-    <!-- We are available all across the globe
 
-    With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-    Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
-    store locator. Any questions? Don't hesitate to contact us today.
-
-    Shop now
-
-    Manufactured with the best materials
-
-    Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
-    to ensure that every product is made as perfect and as consistent as possible. With three decades of 
-    experience in this industry, we understand what customers want for their home and office.
-
-    Shop now
-
-    -->
-    
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     <br>Coded by <a href="#">Chad Buntrakulsuk</a>.
   </div>
 
   <!-- Script section -->
-  <script type="text/javascript" src="/script.d573be0b.js" charset="utf-8"></script>
+
+  <script src="/script.d573be0b.js" charset="utf-8"></script>
 
 </body>
 </html>
