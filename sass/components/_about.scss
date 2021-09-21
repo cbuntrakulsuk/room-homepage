@@ -1,0 +1,16 @@
+@use '../abstracts' as a;
+
+.about {
+    > img {
+        width: 375px;
+    }
+
+}
+
+.title {
+    font-size: 12px;
+    font-family: a.$primary-font;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 4px;
+}

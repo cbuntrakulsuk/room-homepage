@@ -1,0 +1,25 @@
+@use '../abstracts' as a;
+.main {
+
+    &__cta {
+        display: flex;
+        width: 100%;
+        text-transform: uppercase;
+
+        &__text {
+            width: 50%;
+            letter-spacing: 6px;
+        }
+
+        &__button {
+            align-self: center;
+            width: 50%;
+            height: 12px;
+        }
+    }
+
+    p {
+        margin-bottom: 40px;
+    }
+
+}
