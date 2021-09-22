@@ -69,3 +69,31 @@
     //background: red;
     transform: translateY(0);
 }
+
+@media only screen and (min-width: 376px) {
+
+    .navbar {
+        width: 100%;
+        &__hamburger {
+            display: none;
+        }
+
+        &__title {
+            justify-content: start;
+            align-items: center;
+            padding-left: 40px;
+            padding-top: 20px;
+            width: 100%;
+        }
+
+        &__links {
+            padding-left: 150px;
+            display: flex;
+            transform: translateY(0);
+            background: transparent;
+            color: a.$white;
+        }
+
+    }
+
+}

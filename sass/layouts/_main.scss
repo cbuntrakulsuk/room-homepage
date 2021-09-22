@@ -1,5 +1,8 @@
 @use '../abstracts' as a;
+
 .main {
+    max-width: 840px;
+    flex: 1;
 
     &__cta {
         display: flex;
@@ -27,4 +30,10 @@
         margin-bottom: 40px;
     }
 
+}
+
+@media only screen and (min-width: 1045px) {
+    .main {
+        max-width: 500px;
+    }
 }

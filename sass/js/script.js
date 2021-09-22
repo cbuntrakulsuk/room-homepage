@@ -16,6 +16,10 @@ function openMenu(e) {
 
 //slider
 $('.slider').slick({
+    mobileFirst:true,
+    // variableWidth: true,
+    // adaptiveHeight: true,
     prevArrow: '.hero__controls__arrow__prev',
     nextArrow: '.hero__controls__arrow__next',
+    
 })

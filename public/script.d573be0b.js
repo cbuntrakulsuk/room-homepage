@@ -14249,6 +14249,9 @@ function openMenu(e) {
 
 
 (0, _jquery.default)('.slider').slick({
+  mobileFirst: true,
+  // variableWidth: true,
+  // adaptiveHeight: true,
   prevArrow: '.hero__controls__arrow__prev',
   nextArrow: '.hero__controls__arrow__next'
 });
@@ -14280,7 +14283,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "14280" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "14538" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

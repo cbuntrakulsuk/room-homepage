@@ -127,7 +127,7 @@ body {
 
 h1 {
   font-family: "Spartan";
-  font-size: 25px;
+  font-size: 30px;
 }
 
 h4 {
@@ -149,7 +149,6 @@ body {
   margin-right: 35px;
   margin-top: 75px;
   margin-bottom: 70px;
-  width: 300px;
 }
 
 .attribution {
@@ -222,45 +221,45 @@ body {
   transform: translateY(0);
 }
 
-.slider {
-  position: relative;
-  min-width: 100%;
+@media only screen and (min-width: 376px) {
+  .navbar {
+    width: 100%;
+  }
+  .navbar__hamburger {
+    display: none;
+  }
+  .navbar__title {
+    justify-content: start;
+    align-items: center;
+    padding-left: 40px;
+    padding-top: 20px;
+    width: 100%;
+  }
+  .navbar__links {
+    padding-left: 150px;
+    display: flex;
+    transform: translateY(0);
+    background: transparent;
+    color: white;
+  }
 }
-.slider__img {
-  min-height: 360px;
-}
-.slider__controls {
+.main__container {
+  margin: 0;
+  padding: 0;
   display: flex;
-  position: absolute;
-  height: 56px;
-  bottom: 1%;
-  width: 375px;
-  justify-content: flex-end;
-}
-.slider__controls__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: black;
-  width: 56px;
-  height: 56px;
-}
-.slider__controls__button:hover {
-  background: #454545;
-  cursor: pointer;
+  flex-direction: column;
 }
 
 .hero {
   position: relative;
-  height: 360px;
-  width: 375px;
+  max-width: 840px;
 }
 .hero__controls {
   display: flex;
   position: absolute;
   height: 56px;
-  bottom: 0;
-  width: 375px;
+  bottom: 1%;
+  right: 0;
   justify-content: flex-end;
 }
 .hero__controls__arrow__prev {
@@ -288,6 +287,31 @@ body {
   cursor: pointer;
 }
 
+.desktop {
+  display: none !important;
+}
+
+@media only screen and (min-width: 376px) {
+  .mobile {
+    display: none !important;
+  }
+
+  .desktop {
+    display: block !important;
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 840px) {
+  .main__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.main {
+  max-width: 840px;
+  flex: 1;
+}
 .main__cta {
   display: flex;
   width: 100%;
@@ -311,6 +335,11 @@ body {
   margin-bottom: 40px;
 }
 
+@media only screen and (min-width: 1045px) {
+  .main {
+    max-width: 500px;
+  }
+}
 .about > img {
   width: 375px;
 }
