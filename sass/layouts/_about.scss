@@ -1,8 +1,11 @@
 @use '../abstracts' as a;
 
 .about {
+    display: flex;
+    flex-direction: column;
+
     > img {
-        width: 375px;
+        width: 100%;
     }
 }
 
@@ -12,4 +15,16 @@
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 4px;
+}
+
+@media only screen and (min-width: 840px) {
+
+    .about {
+        max-width: 1440px;
+        flex-direction: row;
+        > img {
+            max-width: 100%;
+            width: auto;
+        }
+    }
 }

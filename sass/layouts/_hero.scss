@@ -12,6 +12,7 @@
     // height: 360px;
     // width: 375px;
     max-width: 840px;
+    max-height: 534px;
 
     &__controls {
         display: flex;
@@ -80,5 +81,13 @@
     .main__container {
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    .hero {
+        &__controls {
+            bottom: 0%;
+            right: -112px;
+        }
+
     }
 }

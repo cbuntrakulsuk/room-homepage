@@ -149,11 +149,13 @@ body {
   margin-right: 35px;
   margin-top: 75px;
   margin-bottom: 70px;
+  max-width: 461px;
 }
 
 .attribution {
   margin-top: 20px;
   padding: 5px;
+  max-width: 1440px;
 }
 
 .navbar {
@@ -253,6 +255,7 @@ body {
 .hero {
   position: relative;
   max-width: 840px;
+  max-height: 534px;
 }
 .hero__controls {
   display: flex;
@@ -307,10 +310,17 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  .hero__controls {
+    bottom: 0%;
+    right: -112px;
+  }
 }
 .main {
   max-width: 840px;
+  display: flex;
   flex: 1;
+  justify-content: center;
 }
 .main__cta {
   display: flex;
@@ -340,8 +350,12 @@ body {
     max-width: 500px;
   }
 }
+.about {
+  display: flex;
+  flex-direction: column;
+}
 .about > img {
-  width: 375px;
+  width: 100%;
 }
 
 .title {
@@ -350,6 +364,17 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 4px;
+}
+
+@media only screen and (min-width: 840px) {
+  .about {
+    max-width: 1440px;
+    flex-direction: row;
+  }
+  .about > img {
+    max-width: 100%;
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=/main.39afc03c.css.map */

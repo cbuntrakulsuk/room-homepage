@@ -2,7 +2,9 @@
 
 .main {
     max-width: 840px;
+    display: flex;
     flex: 1;
+    justify-content: center;
 
     &__cta {
         display: flex;
