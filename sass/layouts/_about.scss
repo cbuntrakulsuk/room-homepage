@@ -3,10 +3,27 @@
 .about {
     display: flex;
     flex-direction: column;
+    height: 42vh;
+
+    &__darkImg {
+        flex: 1;
+        background: url("../images/image-about-dark.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__lightImg {
+        flex: 1;
+        background: url("../images/image-about-light.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     > img {
         width: 100%;
     }
+
 }
 
 .title {
@@ -20,7 +37,7 @@
 @media only screen and (min-width: 840px) {
 
     .about {
-        max-width: 1440px;
+        width: 100%;
         flex-direction: row;
         > img {
             max-width: 100%;

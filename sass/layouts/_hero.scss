@@ -9,10 +9,11 @@
 
 .hero {
     position: relative;
-    // height: 360px;
-    // width: 375px;
-    max-width: 840px;
-    max-height: 534px;
+    //width: 58vw;
+    // max-height: 534px;
+    min-width: 0;
+    min-height: 0;
+    flex: 1;
 
     &__controls {
         display: flex;
@@ -65,7 +66,7 @@
 
     .desktop {
         display: block !important;
-        max-width: 100%;
+        width: 100% !important;
         height: auto;
     }
     
@@ -90,4 +91,8 @@
         }
 
     }
+}
+
+.slick-slide {
+    width: 58vh;
 }

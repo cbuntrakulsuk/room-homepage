@@ -145,11 +145,7 @@ body {
 }
 
 .container {
-  margin-left: 35px;
-  margin-right: 35px;
-  margin-top: 75px;
-  margin-bottom: 70px;
-  max-width: 461px;
+  flex: 1;
 }
 
 .attribution {
@@ -254,8 +250,9 @@ body {
 
 .hero {
   position: relative;
-  max-width: 840px;
-  max-height: 534px;
+  min-width: 0;
+  min-height: 0;
+  flex: 1;
 }
 .hero__controls {
   display: flex;
@@ -301,7 +298,7 @@ body {
 
   .desktop {
     display: block !important;
-    max-width: 100%;
+    width: 100% !important;
     height: auto;
   }
 }
@@ -316,6 +313,10 @@ body {
     right: -112px;
   }
 }
+.slick-slide {
+  width: 58vh;
+}
+
 .main {
   max-width: 840px;
   display: flex;
@@ -347,12 +348,27 @@ body {
 
 @media only screen and (min-width: 1045px) {
   .main {
-    max-width: 500px;
+    max-width: 600px;
   }
 }
 .about {
   display: flex;
   flex-direction: column;
+  height: 42vh;
+}
+.about__darkImg {
+  flex: 1;
+  background: url("/image-about-dark.5aa993bf.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about__lightImg {
+  flex: 1;
+  background: url("/image-about-light.db993602.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .about > img {
   width: 100%;
@@ -368,7 +384,7 @@ body {
 
 @media only screen and (min-width: 840px) {
   .about {
-    max-width: 1440px;
+    width: 100%;
     flex-direction: row;
   }
   .about > img {
