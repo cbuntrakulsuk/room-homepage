@@ -22,6 +22,8 @@ $(window).on('load', function(){
         //mobileFirst:true,
         // variableWidth: true,
         //adaptiveHeight: true,
+        adaptiveHeight: false,
+        variableWidth: false,
         prevArrow: '.hero__controls__arrow__prev',
         nextArrow: '.hero__controls__arrow__next',
         
