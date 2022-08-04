@@ -13,7 +13,6 @@ document.querySelector("#slider").innerHTML = `
         <img id="right-arrow" class="h-14 w-14 px-5 py-4 bg-black cursor-pointer" src="./images/icon-angle-right.svg" alt="left-arrow" />
     </div>
 </div>
-    
 `;
 
 var mobileSlider = tns({
@@ -27,4 +26,21 @@ var mobileSlider = tns({
   nextButton: "#right-arrow",
   prevButton: "#left-arrow",
   nav: false,
+});
+// Open mobile menu
+let openButton = document.querySelector("#hamburger-menu");
+let overlay = document.querySelector("#overlay");
+openButton.addEventListener("click", () => {
+  //add animation later?
+  mobileMenu.style.display = "flex";
+  overlay.style.display = "block";
+});
+
+//Close mobile button
+let closeButton = document.querySelector("#closeMenu");
+let mobileMenu = document.querySelector("#mobile-menu");
+closeButton.addEventListener("click", () => {
+  //add animation later?
+  mobileMenu.style.display = "none";
+  overlay.style.display = "none";
 });
