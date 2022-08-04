@@ -2,8 +2,8 @@ import "/style.css";
 import { tns } from "/node_modules/tiny-slider/src/tiny-slider";
 
 document.querySelector("#slider").innerHTML = `
-<div class="relative">
-    <div class="mobile-slider"> 
+<div class="relative lg:h-[530px] lg:overflow-clip">
+    <div class="mobile-slider object-bottom"> 
         <img src="./images/mobile-image-hero-1.jpg" alt="room" />
         <img src="./images/mobile-image-hero-2.jpg" alt="room" />
         <img src="./images/mobile-image-hero-3.jpg" alt="room" />
@@ -27,11 +27,11 @@ var mobileSlider = tns({
   prevButton: "#left-arrow",
   nav: false,
 });
+
 // Open mobile menu
 let openButton = document.querySelector("#hamburger-menu");
 let overlay = document.querySelector("#overlay");
 openButton.addEventListener("click", () => {
-  //add animation later?
   mobileMenu.style.display = "flex";
   overlay.style.display = "block";
 });
@@ -40,7 +40,6 @@ openButton.addEventListener("click", () => {
 let closeButton = document.querySelector("#closeMenu");
 let mobileMenu = document.querySelector("#mobile-menu");
 closeButton.addEventListener("click", () => {
-  //add animation later?
   mobileMenu.style.display = "none";
   overlay.style.display = "none";
 });
