@@ -43,12 +43,13 @@
       <div class="text-white w-1/2 text-xl ml-10">room</div>
     </nav>
 
-    <div class="lg:flex lg:h-[530px]">
+    <div class="lg:flex">
       <!-- slider -->
-      <div class="lg:w-[58%]" id="slider"></div>
+      <div class="md:hidden" id="slider"></div>
+      <div class="hidden md:block" id="desktopSlider"></div>
 
       <!-- content section -->
-      <div class="mt-14 mx-8 lg:w-[34%]">
+      <div class="mt-14 mx-8">
         <div class="text-3xl mb-7 font-leagueSpartan font-bold">
           Discover innovative ways to decorate
         </div>
@@ -62,16 +63,19 @@
         </div>
 
         <div
-          class="text-sm font-bold mb-[75px] font-leagueSpartan tracking-[12px] uppercase"
+          class="text-sm font-bold font-leagueSpartan tracking-[10px] uppercase flex items-center mb-7"
         >
           Shop now
+          <img
+            class="cursor-pointer h-3 w-10 ml-6"
+            src="./images/icon-arrow.svg"
+          />
         </div>
-        <img class="inline cursor-pointer" src="./images/icon-arrow.svg" />
       </div>
     </div>
 
     <!-- about section -->
-    <div class="">
+    <div>
       <img class="w-full" src="./images/image-about-dark.jpg" />
       <div class="mx-8 my-12">
         <div class="mb-4 font-bold uppercase font-leagueSpartan tracking-[5px]">

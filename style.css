@@ -4,9 +4,9 @@
 @tailwind utilities;
 
 /* need to set for only large screen */
-.tns-item {
+/* .tns-item {
   height: 531px;
   width: 839px;
   object-fit: cover;
   object-position: bottom;
-}
+} */
