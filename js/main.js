@@ -17,14 +17,14 @@ document.querySelector("#slider").innerHTML = `
 
 document.querySelector("#desktopSlider").innerHTML = `
 <div class="relative">
-    <div class="desktop-slider object-bottom">
+    <div class="desktop-slider object-right-bottom">
         <img src="./images/desktop-image-hero-1.jpg" alt="room" />
         <img src="./images/desktop-image-hero-2.jpg" alt="room" />
         <img src="./images/desktop-image-hero-3.jpg" alt="room" />
     </div>
-    <div id="nav-arrows" class="flex absolute bottom-0 right-0">
-        <img id="left-arrow-d" class="h-14 w-14 px-5 py-4 bg-black cursor-pointer" src="./images/icon-angle-left.svg" alt="left-arrow" />
-        <img id="right-arrow-d" class="h-14 w-14 px-5 py-4 bg-black cursor-pointer" src="./images/icon-angle-right.svg" alt="left-arrow" />
+    <div id="nav-arrows" class="flex absolute bottom-0 md:-right-0 lg:-right-[22%] lg:w-[22%] lg:h-[20%]">
+        <img id="left-arrow-d" class="w-1/2  px-8 py-7 bg-black cursor-pointer" src="./images/icon-angle-left.svg" alt="left-arrow" />
+        <img id="right-arrow-d" class="w-1/2 px-8 py-7 bg-black cursor-pointer" src="./images/icon-angle-right.svg" alt="left-arrow" />
     </div>
 </div>
 `;
