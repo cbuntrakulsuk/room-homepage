@@ -22,9 +22,9 @@ document.querySelector("#desktopSlider").innerHTML = `
         <img src="./images/desktop-image-hero-2.jpg" alt="room" />
         <img src="./images/desktop-image-hero-3.jpg" alt="room" />
     </div>
-    <div id="nav-arrows" class="flex absolute bottom-0 md:-right-0 lg:-right-[22%] lg:w-[22%] lg:h-[20%]">
-        <img id="left-arrow-d" class="w-1/2  px-8 py-7 bg-black cursor-pointer" src="./images/icon-angle-left.svg" alt="left-arrow" />
-        <img id="right-arrow-d" class="w-1/2 px-8 py-7 bg-black cursor-pointer" src="./images/icon-angle-right.svg" alt="left-arrow" />
+    <div id="nav-arrows" class="flex absolute bottom-0 md:-right-0 lg:-right-[20%] lg:w-[20%] lg:h-[18%]">
+        <img id="left-arrow-d" class="w-1/2  px-8 py-8 bg-black cursor-pointer" src="./images/icon-angle-left.svg" alt="left-arrow" />
+        <img id="right-arrow-d" class="w-1/2 px-8 py-8 bg-black cursor-pointer" src="./images/icon-angle-right.svg" alt="left-arrow" />
     </div>
 </div>
 `;

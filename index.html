@@ -32,7 +32,9 @@
     </div>
 
     <!-- hamburger menu -->
-    <nav class="bg-transparent h-24 flex items-center w-full absolute z-40">
+    <nav
+      class="bg-transparent h-24 flex items-center w-full absolute z-40 lg:hidden"
+    >
       <div class="w-1/3">
         <img
           id="hamburger-menu"
@@ -43,18 +45,31 @@
       <div class="text-white w-1/2 text-xl ml-10">room</div>
     </nav>
 
+    <!-- desktop menu -->
+    <nav
+      class="hidden lg:flex w-1/3 absolute z-50 left-16 top-10 items-end text-white font-semibold cursor-pointer"
+    >
+      <div class="text-3xl">room</div>
+      <div class="ml-10">home</div>
+      <div class="ml-10">shop</div>
+      <div class="ml-10">about</div>
+      <div class="ml-10">contact</div>
+    </nav>
+
     <div class="lg:flex">
       <!-- slider -->
       <div class="md:hidden" id="slider"></div>
       <div class="hidden md:block lg:w-[58%]" id="desktopSlider"></div>
 
       <!-- content section -->
-      <div class="mt-14 mx-8 md:w-full lg:w-[42%]">
-        <div class="text-3xl mb-7 font-leagueSpartan font-bold">
+      <div class="mt-14 mx-8 md:w-full lg:w-[42%] lg:px-20 lg:py-10">
+        <div class="text-3xl mb-7 font-leagueSpartan font-bold md:text-5xl">
           Discover innovative ways to decorate
         </div>
 
-        <div class="text-sm mb-12 font-leagueSpartan text-gray">
+        <div
+          class="text-sm mb-12 font-leagueSpartan text-gray lg:text-base lg:mb-5"
+        >
           We provide unmatched quality, comfort, and style for property owners
           across the country. Our experts combine form and function in bringing
           your vision to life. Create a room in your own style with our
@@ -63,7 +78,7 @@
         </div>
 
         <div
-          class="text-sm font-bold font-leagueSpartan tracking-[10px] uppercase flex items-center mb-7"
+          class="text-sm font-bold font-leagueSpartan tracking-[10px] uppercase flex items-center mb-7 md:text-base"
         >
           Shop now
           <img
