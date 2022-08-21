@@ -1,34 +1,6 @@
 import "/style.css";
 import { tns } from "/node_modules/tiny-slider/src/tiny-slider";
 
-document.querySelector("#slider").innerHTML = `
-<div class="relative">
-    <div class="mobile-slider object-bottom"> 
-        <img src="./images/mobile-image-hero-1.jpg" alt="room" />
-        <img src="./images/mobile-image-hero-2.jpg" alt="room" />
-        <img src="./images/mobile-image-hero-3.jpg" alt="room" />
-    </div>
-    <div id="nav-arrows" class="flex absolute bottom-0 right-0">
-        <img id="left-arrow" class="h-14 w-14 px-5 py-4 bg-black cursor-pointer" src="./images/icon-angle-left.svg" alt="left-arrow" />
-        <img id="right-arrow" class="h-14 w-14 px-5 py-4 bg-black cursor-pointer" src="./images/icon-angle-right.svg" alt="left-arrow" />
-    </div>
-</div>
-`;
-
-document.querySelector("#desktopSlider").innerHTML = `
-<div class="relative">
-    <div class="desktop-slider object-right-bottom">
-        <img src="./images/desktop-image-hero-1.jpg" alt="room" />
-        <img src="./images/desktop-image-hero-2.jpg" alt="room" />
-        <img src="./images/desktop-image-hero-3.jpg" alt="room" />
-    </div>
-    <div id="nav-arrows" class="flex absolute bottom-0 md:-right-0 lg:-right-[20%] lg:w-[20%] lg:h-[18%]">
-        <img id="left-arrow-d" class="w-1/2  px-8 py-8 bg-black cursor-pointer" src="./images/icon-angle-left.svg" alt="left-arrow" />
-        <img id="right-arrow-d" class="w-1/2 px-8 py-8 bg-black cursor-pointer" src="./images/icon-angle-right.svg" alt="left-arrow" />
-    </div>
-</div>
-`;
-
 var mobileSlider = tns({
   container: ".mobile-slider",
   items: 1,
