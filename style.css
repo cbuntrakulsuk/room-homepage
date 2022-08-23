@@ -2,11 +2,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* need to set for only large screen */
-/* @media only screen and (min-width: 1200px) {
-  .tns-inner {
-    height: 531px;
-    width: 839px;
-  }
-} */

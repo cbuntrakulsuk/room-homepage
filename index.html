@@ -87,7 +87,7 @@
           <img src="images/desktop-image-hero-2.jpg" alt="room" />
           <img src="images/desktop-image-hero-3.jpg" alt="room" />
         </div>
-        <di
+        <div
           id="nav-arrows"
           class="flex absolute bottom-0 md:-right-0 lg:-right-[20%] lg:w-[20%] lg:h-[18%]"
         >
@@ -141,7 +141,7 @@
           class="object-cover h-full w-full"
           src="./images/image-about-dark.jpg"
         />
-      </div>
+      </div
       <div class="mx-8 my-12 md:w-[29%]">
         <div class="mb-4 font-bold uppercase font-leagueSpartan tracking-[5px]">
           About our furniture
@@ -166,15 +166,31 @@
     ></div>
 
     <!-- grid -->
-    <div class="grid grid-cols-4 relative">
-      <div class="bg-red-400 w-full col-span-2">Slider</div>
-      <div class="bg-blue-400 grid z-10">arrows</div>
-      <div class="bg-green-400 w-full col-start-3 col-span-2 absolute">
-        content
+    <div class="grid grid-cols-9 h-screen">
+      <div class="bg-red-400 col-span-5">
+        <div class="hidden md:block">
+          <div class="desktop-slider object-right-bottom">
+            <img src="images/desktop-image-hero-1.jpg" alt="room" />
+            <img src="images/desktop-image-hero-2.jpg" alt="room" />
+            <img src="images/desktop-image-hero-3.jpg" alt="room" />
+          </div>
+        </div>
       </div>
-      <div class="bg-yellow-400 w-full col-start-1">box 4</div>
-      <div class="bg-purple-400 w-full col-start-2 col-span-2">box 5</div>
-      <div class="bg-orange-400 w-full">box 6</div>
+      <div class="bg-blue-400"></div>
+      <div class="bg-green-400 col-span-3">content</div>
+      <div class="bg-yellow-400 col-span-3">
+        <img
+          class="object-cover w-full h-full"
+          src="./images/image-about-dark.jpg"
+        />
+      </div>
+      <div class="bg-purple-400 col-span-3">box 5</div>
+      <div class="bg-orange-400 col-span-3">
+        <img
+          class="object-cover w-full h-full"
+          src="./images/image-about-light.jpg"
+        />
+      </div>
     </div>
     <script type="module" src="./js/main.js"></script>
   </body>
