@@ -167,16 +167,35 @@
 
     <!-- grid -->
     <div class="grid grid-cols-9 h-screen">
-      <div class="bg-red-400 col-span-5">
-        <div class="hidden md:block">
-          <div class="desktop-slider object-right-bottom">
-            <img src="images/desktop-image-hero-1.jpg" alt="room" />
-            <img src="images/desktop-image-hero-2.jpg" alt="room" />
-            <img src="images/desktop-image-hero-3.jpg" alt="room" />
+      <div class="bg-red-400 col-span-5 relative overflow-hidden">
+        <img
+          class="absolute inset-0object-cover w-full h-full transition-all ease-in-out duration-1000 transform translate-x-0 slide"
+          src="images/desktop-image-hero-1.jpg"
+          alt="room"
+        />
+        <img
+          class="absolute object-cover w-full h-full transition-all ease-in-out duration-1000 transform translate-x-full slide"
+          src="images/desktop-image-hero-2.jpg"
+          alt="room"
+        />
+        <!-- <img src="images/desktop-image-hero-3.jpg" alt="room" /> -->
+      </div>
+      <div class="bg-blue-400">
+        <div class="relative">
+          <div
+            id="nextArrow"
+            class="z-50 fixed top-0 right-7 bg-white w-16 h-16 flex items-center justify-center text-black"
+          >
+            &#x276F;
+          </div>
+          <div
+            id="prevArrow"
+            class="z-50 fixed top-0 bg-white w-16 h-16 mr-16 border-r border-gray-400 flex items-center justify-center text-black"
+          >
+            &#x276E;
           </div>
         </div>
       </div>
-      <div class="bg-blue-400"></div>
       <div class="bg-green-400 col-span-3">content</div>
       <div class="bg-yellow-400 col-span-3">
         <img
