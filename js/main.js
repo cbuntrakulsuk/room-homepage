@@ -46,8 +46,27 @@ closeButton.addEventListener("click", () => {
 //new slider
 
 const sliderImages = document.querySelectorAll(".slide");
+const nextArrow = document.querySelector("#nextArrow");
+const prevArrow = document.querySelector("#prevArrow");
 let counter = 0;
 
 sliderImages.forEach((slide, index) => {
   slide.style.left = `${index * 100}%`;
+});
+
+const slideImage = () => {
+  sliderImages.forEach((slide) => {
+    slide.style.transform = `translateX(-${counter * 100}%)`;
+  });
+};
+
+nextArrow.addEventListener("click", () => {
+  counter++;
+  slideImage();
+});
+
+prevArrow.addEventListener("click", () => {
+  console.log("clicked prev");
+  counter--;
+  slideImage();
 });
