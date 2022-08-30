@@ -107,34 +107,10 @@
       </div> -->
 
       <!-- content section -->
-      <!-- <div class="mt-14 mx-8 md:w-full lg:w-[42%] lg:px-20 lg:py-10">
-        <div class="text-3xl mb-7 font-leagueSpartan font-bold md:text-5xl">
-          Discover innovative ways to decorate
-        </div>
-
-        <div
-          class="text-sm mb-12 font-leagueSpartan text-gray lg:text-base lg:mb-5"
-        >
-          We provide unmatched quality, comfort, and style for property owners
-          across the country. Our experts combine form and function in bringing
-          your vision to life. Create a room in your own style with our
-          collection and make your property a reflection of you and what you
-          love.
-        </div>
-
-        <div
-          class="text-sm font-bold font-leagueSpartan tracking-[10px] uppercase flex items-center mb-7 md:text-base"
-        >
-          Shop now
-          <img
-            class="cursor-pointer h-3 w-10 ml-6"
-            src="./images/icon-arrow.svg"
-          />
-        </div>
-      </div> -->
     </div>
 
     <!-- about section -->
+
     <!-- <div class="md:flex w-full h-full">
       <div class="md:h-full md:w-[35%]">
         <img
@@ -165,8 +141,8 @@
       class="hidden bg-black absolute top-0 left-0 z-40 h-screen w-screen opacity-50"
     ></div>
 
-    <!-- grid -->
-    <div class="grid grid-cols-10 grid-rows-6 h-screen">
+    <!-- grid desktop -->
+    <div class="hidden md:grid grid-cols-10 grid-rows-6 h-screen">
       <div class="bg-red-400 col-span-6 row-span-4 relative overflow-hidden">
         <img
           id="slide1"
@@ -188,32 +164,78 @@
         />
       </div>
       <div class="bg-transparent col-start-7 row-start-4 relative">
-        <div class="flex absolute bottom-0 flex-row-reverse">
+        <div
+          class="flex absolute bottom-0 flex-row-reverse w-full h-1/2 justify-center"
+        >
           <div
             id="nextArrow"
-            class="cursor-pointer z-50 bg-white w-[72px] h-[72px] flex items-center justify-center text-black"
+            class="cursor-pointer z-50 bg-black w-1/2 flex justify-center p-5"
           >
-            &#x276F;
+            <img
+              class="opacity-60"
+              src="\images\icon-angle-right.svg"
+              alt="next arrow"
+            />
           </div>
           <div
             id="prevArrow"
-            class="cursor-pointer z-50 bg-white w-[72px] h-[72px] flex items-center justify-center text-black"
+            class="cursor-pointer z-50 bg-black w-1/2 flex justify-center p-5"
           >
-            &#x276E;
+            <img
+              class="opacity-60"
+              src="\images\icon-angle-left.svg"
+              alt="prev arrow"
+            />
           </div>
         </div>
       </div>
-      <div class="bg-green-400 col-span-4 row-span-4 col-start-7 row-start-1">
-        content
+      <div class="col-span-4 row-span-4 col-start-7 row-start-1">
+        <div class="px-24">
+          <div class="pt-28 mb-7 font-leagueSpartan font-bold text-4xl">
+            Discover innovative ways to decorate
+          </div>
+
+          <div
+            class="text-sm mb-12 font-leagueSpartan text-gray lg:text-base lg:mb-5"
+          >
+            We provide unmatched quality, comfort, and style for property owners
+            across the country. Our experts combine form and function in
+            bringing your vision to life. Create a room in your own style with
+            our collection and make your property a reflection of you and what
+            you love.
+          </div>
+
+          <div
+            class="text-sm font-bold font-leagueSpartan tracking-[10px] uppercase flex items-center mb-7 md:text-base"
+          >
+            Shop now
+            <img
+              class="cursor-pointer h-3 w-10 ml-6"
+              src="./images/icon-arrow.svg"
+            />
+          </div>
+        </div>
       </div>
-      <div class="bg-yellow-400 col-span-3 row-span-2">
+      <div class="col-span-3 row-span-2">
         <img
           class="object-cover w-full h-full"
           src="./images/image-about-dark.jpg"
         />
       </div>
-      <div class="bg-purple-400 col-span-4 row-span-2">box 5</div>
-      <div class="bg-orange-400 col-span-3 row-span-2">
+      <div class="col-span-4 row-span-2 py-16 px-11">
+        <div class="mb-4 font-bold uppercase font-leagueSpartan tracking-[5px]">
+          About our furniture
+        </div>
+        <div class="text-sm font-leagueSpartan text-gray">
+          Our multifunctional collection blends design and function to suit your
+          individual taste. Make each room unique, or pick a cohesive theme that
+          best express your interests and what inspires you. Find the furniture
+          pieces you need, from traditional to contemporary styles or anything
+          in between. Product specialists are available to help you create your
+          dream space.
+        </div>
+      </div>
+      <div class="col-span-3 row-span-2">
         <img
           class="object-cover w-full h-full"
           src="./images/image-about-light.jpg"
