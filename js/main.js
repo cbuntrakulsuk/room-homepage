@@ -48,25 +48,56 @@ closeButton.addEventListener("click", () => {
 const sliderImages = document.querySelectorAll(".slide");
 const nextArrow = document.querySelector("#nextArrow");
 const prevArrow = document.querySelector("#prevArrow");
-let counter = 0;
+let counter = 1;
 
 sliderImages.forEach((slide, index) => {
-  slide.style.left = `${index * 100}%`;
+  slide.style.left = `${index * 100}%`; //sets each image next to eachother
+  slide.style.transform = `translateX(-${counter * 100}%)`; //start at second slide
 });
 
-const slideImage = () => {
-  sliderImages.forEach((slide) => {
-    slide.style.transform = `translateX(-${counter * 100}%)`;
-  });
-};
+// const slideImage = () => {
+//   sliderImages.forEach((slide) => {
+//     slide.style.transform = `translateX(-${counter * 100}%)`;
+//   });
+// };
 
 nextArrow.addEventListener("click", () => {
   counter++;
-  slideImage();
+  sliderImages.forEach((slide) => {
+    slide.style.transition = "transform 0.4s ease-in-out";
+    slide.style.transitionDuration = "700ms";
+    slide.style.transform = `translateX(-${counter * 100}%)`; //slides image
+  });
 });
 
 prevArrow.addEventListener("click", () => {
-  console.log("clicked prev");
   counter--;
-  slideImage();
+  sliderImages.forEach((slide) => {
+    slide.style.transition = "transform 0.4s ease-in-out";
+    slide.style.transitionDuration = "700ms";
+    slide.style.transform = `translateX(-${counter * 100}%)`;
+  });
+});
+
+addEventListener("transitionend", () => {
+  if (counter === 4) {
+    console.log("transition end");
+    sliderImages.forEach((slide) => {
+      slide.style.transition = "none";
+    });
+    counter = 1;
+    sliderImages.forEach((slide) => {
+      slide.style.transform = `translateX(-${counter * 100}%)`;
+    });
+  }
+  if (counter === 0) {
+    console.log("transition end");
+    sliderImages.forEach((slide) => {
+      slide.style.transition = "none";
+    });
+    counter = 3;
+    sliderImages.forEach((slide) => {
+      slide.style.transform = `translateX(-${counter * 100}%)`;
+    });
+  }
 });
