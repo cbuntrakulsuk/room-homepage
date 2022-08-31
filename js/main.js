@@ -1,29 +1,16 @@
 import "/style.css";
 import { tns } from "/node_modules/tiny-slider/src/tiny-slider";
 
-var mobileSlider = tns({
-  container: ".mobile-slider",
-  items: 1,
-  speed: 500,
-  navcontainer: ".nav-arrows",
-  controls: 1,
-  autoplayButtonOutput: 0,
-  autoplay: true,
-  nextButton: "#right-arrow",
-  prevButton: "#left-arrow",
-  nav: false,
-});
-
-// var desktopSlider = tns({
-//   container: ".desktop-slider",
+// var mobileSlider = tns({
+//   container: ".mobile-slider",
 //   items: 1,
 //   speed: 500,
 //   navcontainer: ".nav-arrows",
 //   controls: 1,
 //   autoplayButtonOutput: 0,
 //   autoplay: true,
-//   nextButton: "#right-arrow-d",
-//   prevButton: "#left-arrow-d",
+//   nextButton: "#right-arrow",
+//   prevButton: "#left-arrow",
 //   nav: false,
 // });
 
@@ -55,13 +42,8 @@ sliderImages.forEach((slide, index) => {
   slide.style.transform = `translateX(-${counter * 100}%)`; //start at second slide
 });
 
-// const slideImage = () => {
-//   sliderImages.forEach((slide) => {
-//     slide.style.transform = `translateX(-${counter * 100}%)`;
-//   });
-// };
-
 nextArrow.addEventListener("click", () => {
+  if (counter >= sliderImages.length - 1) return;
   counter++;
   sliderImages.forEach((slide) => {
     slide.style.transition = "transform 0.4s ease-in-out";
@@ -71,6 +53,7 @@ nextArrow.addEventListener("click", () => {
 });
 
 prevArrow.addEventListener("click", () => {
+  if (counter <= 0) return;
   counter--;
   sliderImages.forEach((slide) => {
     slide.style.transition = "transform 0.4s ease-in-out";
