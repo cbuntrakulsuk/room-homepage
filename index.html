@@ -60,38 +60,62 @@
       id="overlay"
       class="hidden bg-black absolute top-0 left-0 z-40 h-screen w-screen opacity-50"
     ></div>
+
     <!-- mobile slider -->
-    <div class="md:hidden overflow-hidden">
+    <div class="md:hidden relative">
       <img
         id="firstSlide"
-        class="absolute inset-0 object-cover"
+        class="absolute inset-0 object-cover mobileSlide"
         src="images/mobile-image-hero-3.jpg"
         alt="room"
       />
       <img
         id="slide1"
-        class="absolute inset-0 object-cover"
+        class="absolute inset-0 object-cover mobileSlide"
         src="images/mobile-image-hero-1.jpg"
         alt="room"
       />
       <img
         id="slide2"
-        class="absolute inset-0 object-cover"
+        class="absolute inset-0 object-cover mobileSlide"
         src="images/mobile-image-hero-2.jpg"
         alt="room"
       />
       <img
         id="slide3"
-        class="absolute inset-0 object-cover"
+        class="absolute inset-0 object-cover mobileSlide"
         src="images/mobile-image-hero-3.jpg"
         alt="room"
       />
       <img
         id="lastSlide"
-        class="absolute inset-0 object-cover"
+        class="absolute inset-0 object-cover mobileSlide"
         src="images/mobile-image-hero-1.jpg"
         alt="room"
       />
+
+      <div class="flex absolute top-0 flex-row-reverse justify-center right-0">
+        <div
+          id="m-nextArrow"
+          class="cursor-pointer z-50 bg-black w-[56px] h-[56px] flex justify-center p-5"
+        >
+          <img
+            class="opacity-60"
+            src="\images\icon-angle-right.svg"
+            alt="next arrow"
+          />
+        </div>
+        <div
+          id="m-prevArrow"
+          class="cursor-pointer z-50 bg-black w-[56px] h-[56px] flex justify-center p-5"
+        >
+          <img
+            class="opacity-60"
+            src="\images\icon-angle-left.svg"
+            alt="prev arrow"
+          />
+        </div>
+      </div>
     </div>
 
     <!-- grid desktop -->
