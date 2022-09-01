@@ -56,13 +56,14 @@
       <div class="ml-10">contact</div>
     </nav>
 
+    <!-- overlay -->
     <div
       id="overlay"
       class="hidden bg-black absolute top-0 left-0 z-40 h-screen w-screen opacity-50"
     ></div>
 
     <!-- mobile slider -->
-    <div class="md:hidden relative">
+    <div class="md:hidden relative h-[360px]">
       <img
         id="firstSlide"
         class="absolute inset-0 object-cover mobileSlide"
@@ -94,7 +95,9 @@
         alt="room"
       />
 
-      <div class="flex absolute top-0 flex-row-reverse justify-center right-0">
+      <div
+        class="flex absolute flex-row-reverse justify-center right-0 bottom-0"
+      >
         <div
           id="m-nextArrow"
           class="cursor-pointer z-50 bg-black w-[56px] h-[56px] flex justify-center p-5"
@@ -119,9 +122,11 @@
     </div>
 
     <!-- grid desktop -->
-    <div class="hidden md:grid md:grid-cols-10 md:grid-rows-6 h-screen">
+    <div class="block md:grid md:grid-cols-10 md:grid-rows-6 h-screen">
       <!-- desktop slider -->
-      <div class="md:col-span-6 md:row-span-4 md:relative overflow-hidden">
+      <div
+        class="hidden md:grid md:col-span-6 md:row-span-4 md:relative overflow-hidden"
+      >
         <img
           id="firstSlide"
           class="absolute inset-0 object-cover w-full h-full slide"
@@ -153,7 +158,9 @@
           alt="room"
         />
       </div>
-      <div class="bg-transparent col-start-7 row-start-4 relative">
+      <div
+        class="bg-transparent col-start-7 row-start-4 relative overflow-hidden"
+      >
         <div
           class="flex absolute bottom-0 flex-row-reverse w-full h-1/2 justify-center"
         >
@@ -180,8 +187,10 @@
         </div>
       </div>
       <div class="col-span-4 row-span-4 col-start-7 row-start-1">
-        <div class="px-24">
-          <div class="pt-28 mb-7 font-leagueSpartan font-bold text-4xl">
+        <div class="px-8 md:px-24">
+          <div
+            class="pt-14 pb-5 md:pt-28 md:mb-7 font-leagueSpartan font-bold text-4xl"
+          >
             Discover innovative ways to decorate
           </div>
 
