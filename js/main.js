@@ -1,18 +1,4 @@
 import "/style.css";
-import { tns } from "/node_modules/tiny-slider/src/tiny-slider";
-
-// var mobileSlider = tns({
-//   container: ".mobile-slider",
-//   items: 1,
-//   speed: 500,
-//   navcontainer: ".nav-arrows",
-//   controls: 1,
-//   autoplayButtonOutput: 0,
-//   autoplay: true,
-//   nextButton: "#right-arrow",
-//   prevButton: "#left-arrow",
-//   nav: false,
-// });
 
 // Open mobile menu
 let openButton = document.querySelector("#hamburger-menu");
@@ -20,13 +6,18 @@ let overlay = document.querySelector("#overlay");
 openButton.addEventListener("click", () => {
   mobileMenu.style.display = "flex";
   overlay.style.display = "block";
+  mobileMenu.style.transform = `translateY(${0}%)`;
+  mobileMenu.style.transition = "transform 0.4s ease-in-out";
+  mobileMenu.style.transitionDuration = "300ms";
 });
 
 //Close mobile button
 let closeButton = document.querySelector("#closeMenu");
 let mobileMenu = document.querySelector("#mobile-menu");
 closeButton.addEventListener("click", () => {
-  mobileMenu.style.display = "none";
+  mobileMenu.style.transform = `translateY(-${100}%)`;
+  mobileMenu.style.transition = "transform 0.4s ease-in-out";
+  mobileMenu.style.transitionDuration = "300ms";
   overlay.style.display = "none";
 });
 
